@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkatmohan Vasamsetti — Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Fallback fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="pl-box">
+      <svg class="pl-ring" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(0,255,200,0.15)" stroke-width="2"/>
+        <circle class="pl-arc" cx="50" cy="50" r="42" fill="none" stroke="#00ffc8" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="pl-text">VV</span>
+    </div>
+    <p class="pl-sub">Loading portfolio…</p>
+  </div>
+
+  <!-- Canvas Background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Cursor -->
+  <div class="cur-dot" id="curDot"></div>
+  <div class="cur-ring" id="curRing"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="hdr-inner">
+      <a href="#hero" class="hdr-logo">
+        <span class="logo-vv">VV</span>
+        <span class="logo-name">Venkatmohan</span>
+      </a>
+      <nav class="hdr-nav" id="hdrNav">
+        <a href="#about" data-text="About">About</a>
+        <a href="#resume" data-text="Resume">Resume</a>
+        <a href="#projects" data-text="Projects">Projects</a>
+        <a href="#certifications" data-text="Certs">Certs</a>
+        <a href="#contact" class="nav-cta">
+          <span>Hire Me</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-inner">
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="drawer-bg" id="drawerBg"></div>
+
+  <main>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-l">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for opportunities
+          </div>
+          <h1 class="hero-name">
+            <span class="hn-line" data-aos="line">Venkat</span>
+            <span class="hn-line italic" data-aos="line">mohan</span>
+            <span class="hn-line" data-aos="line">Vasamsetti</span>
+          </h1>
+          <div class="hero-role">
+            <span class="role-prefix">I build</span>
+            <div class="role-words">
+              <span>PLC Systems</span>
+              <span>AUV Comms</span>
+              <span>RF Networks</span>
+              <span>Control Logic</span>
+              <span>IoT Systems</span>
+            </div>
+          </div>
+          <p class="hero-bio">
+            Final-year Electronics & Instrumentation engineer with hands-on experience 
+            in industrial automation, process control, and embedded communication. 
+            Currently at <strong>CSIR–NIO Goa</strong> building AUV systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <span>Explore Work</span>
+              <div class="btn-bg"></div>
+            </a>
+            <a href="#contact" class="btn-ghost">Get in Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/venkat-mohan-vasamsetti" target="_blank" class="hs-link" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:venkatmohan200@gmail.com" class="hs-link" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/918179970422" target="_blank" class="hs-link" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-r">
+          <div class="hero-card-wrap">
+            <div class="hero-card">
+              <div class="hc-glow"></div>
+              <div class="hc-avatar">
+                <div class="hca-inner">VV</div>
+                <!-- Replace with: <img src="photo.jpg" alt="Venkatmohan"> -->
+              </div>
+              <div class="hc-name">Venkatmohan Vasamsetti</div>
+              <div class="hc-role">Electronics & Instrumentation · 2026</div>
+              <div class="hc-divider"></div>
+              <div class="hc-stats">
+                <div class="hcs">
+                  <strong class="counter" data-target="7.76" data-decimal="2">0</strong>
+                  <span>CGPA</span>
+                </div>
+                <div class="hcs-sep"></div>
+                <div class="hcs">
+                  <strong class="counter" data-target="2" data-decimal="0">0</strong><sup>+</sup>
+                  <span>Internships</span>
+                </div>
+                <div class="hcs-sep"></div>
+                <div class="hcs">
+                  <strong class="counter" data-target="3" data-decimal="0">0</strong><sup>+</sup>
+                  <span>Projects</span>
+                </div>
+              </div>
+              <div class="hc-divider"></div>
+              <div class="hc-tags">
+                <span>PLC</span><span>Profibus</span><span>HART</span>
+                <span>Raspberry Pi</span><span>Linux</span>
+              </div>
+              <div class="hc-status">
+                <span class="status-dot"></span>
+                Open to work · India
+              </div>
+            </div>
+            <div class="card-orbit">
+              <div class="orbit-ring r1"></div>
+              <div class="orbit-ring r2"></div>
+              <div class="orbit-dot od1"><i class="fas fa-microchip"></i></div>
+              <div class="orbit-dot od2"><i class="fas fa-wifi"></i></div>
+              <div class="orbit-dot od3"><i class="fas fa-industry"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-ind">
+        <div class="hsi-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="sec-hd">
+          <code class="sec-num">01.</code>
+          <h2 class="sec-title">About Me</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-col">
+            <div class="photo-wrap">
+              <div class="photo-box">
+                <div class="photo-init">VV</div>
+                <p class="photo-hint">← Add your photo</p>
+                <!-- Replace with: <img src="photo.jpg" alt="Venkatmohan Vasamsetti"> -->
+              </div>
+              <div class="photo-frame-deco"></div>
+              <div class="photo-corner pc-tl"></div>
+              <div class="photo-corner pc-br"></div>
+            </div>
+            <div class="about-quick">
+              <div class="aq-row"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+              <div class="aq-row"><i class="fas fa-graduation-cap"></i><span>B.Tech EIE, 2026</span></div>
+              <div class="aq-row"><i class="fas fa-phone"></i><span>+91 8179970422</span></div>
+              <div class="aq-row"><i class="fas fa-envelope"></i><span>venkatmohan200@gmail.com</span></div>
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <h3 class="about-headline">
+              Bridging the gap between<br>
+              <em>hardware and intelligence.</em>
+            </h3>
+            <p>
+              I'm a final-year B.Tech student in <strong>Electronics and Instrumentation Engineering</strong> 
+              at Adikavi Nannaya University — passionate about building systems that work reliably 
+              in real industrial environments.
+            </p>
+            <p>
+              My internships at <strong>NIT Warangal</strong> and <strong>Visakhapatnam Steel Plant</strong> 
+              gave me deep exposure to PLC programming, industrial fieldbus protocols, and 
+              power plant instrumentation. Currently, I'm pushing those boundaries at 
+              <strong>CSIR–National Institute of Oceanography, Goa</strong> — engineering 
+              an RF communication backbone for an Autonomous Underwater Vehicle.
+            </p>
+
+            <div class="skill-bars">
+              <div class="sb-item" data-width="88">
+                <div class="sb-label"><span>PLC & Industrial Automation</span><span class="sb-pct">88%</span></div>
+                <div class="sb-track"><div class="sb-fill"></div></div>
+              </div>
+              <div class="sb-item" data-width="82">
+                <div class="sb-label"><span>Industrial Protocols (HART/Profibus)</span><span class="sb-pct">82%</span></div>
+                <div class="sb-track"><div class="sb-fill"></div></div>
+              </div>
+              <div class="sb-item" data-width="78">
+                <div class="sb-label"><span>Embedded Systems & Raspberry Pi</span><span class="sb-pct">78%</span></div>
+                <div class="sb-track"><div class="sb-fill"></div></div>
+              </div>
+              <div class="sb-item" data-width="75">
+                <div class="sb-label"><span>Linux & TCP/IP Networking</span><span class="sb-pct">75%</span></div>
+                <div class="sb-track"><div class="sb-fill"></div></div>
+              </div>
+              <div class="sb-item" data-width="70">
+                <div class="sb-label"><span>C Programming</span><span class="sb-pct">70%</span></div>
+                <div class="sb-track"><div class="sb-fill"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-chips">
+              <span>Siemens S7-1200</span><span>TIA Portal</span><span>HART</span>
+              <span>Profibus</span><span>Profinet</span><span>Raspberry Pi</span>
+              <span>Freewave RF</span><span>MikroTik</span><span>TCP/IP</span>
+              <span>Linux</span><span>C Programming</span><span>SCADA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════ RESUME ═══════════ -->
+    <section id="resume">
+      <div class="container">
+        <div class="sec-hd">
+          <code class="sec-num">02.</code>
+          <h2 class="sec-title">Resume</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="resume-tabs">
+          <button class="rtab active" data-tab="education">
+            <i class="fas fa-graduation-cap"></i> Education
+          </button>
+          <button class="rtab" data-tab="experience">
+            <i class="fas fa-briefcase"></i> Experience
+          </button>
+          <button class="rtab" data-tab="skills">
+            <i class="fas fa-layer-group"></i> Skills
+          </button>
+        </div>
+
+        <!-- Education Tab -->
+        <div class="rtab-content active" id="tab-education">
+          <div class="tl">
+            <div class="tl-item reveal">
+              <div class="tl-dot active-dot"></div>
+              <div class="tl-card">
+                <div class="tlc-head">
+                  <div>
+                    <span class="tlc-date">2022 – 2026</span>
+                    <h4>B.Tech — Electronics & Instrumentation Engineering</h4>
+                    <p class="tlc-org">Adikavi Nannaya University</p>
+                  </div>
+                  <div class="tlc-badge">CGPA 7.76</div>
+                </div>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tlc-head">
+                  <div>
+                    <span class="tlc-date">2020 – 2022</span>
+                    <h4>Intermediate (MPC)</h4>
+                    <p class="tlc-org">Gamyam Junior College</p>
+                  </div>
+                  <div class="tlc-badge">51%</div>
+                </div>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tlc-head">
+                  <div>
+                    <span class="tlc-date">2020</span>
+                    <h4>SSC</h4>
+                    <p class="tlc-org">Z.P. High School</p>
+                  </div>
+                  <div class="tlc-badge">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Tab -->
+        <div class="rtab-content" id="tab-experience">
+          <div class="tl">
+            <div class="tl-item reveal">
+              <div class="tl-dot active-dot pulse"></div>
+              <div class="tl-card tl-card-active">
+                <span class="tlc-live">● Live</span>
+                <span class="tlc-date">Ongoing · 2025–26</span>
+                <h4>CSIR – National Institute of Oceanography, Goa</h4>
+                <p class="tlc-org">Research Intern — AUV Communication Module</p>
+                <ul class="tlc-list">
+                  <li>Developing full RF communication system for Autonomous Underwater Vehicle</li>
+                  <li>Integrating Freewave LRS455AC RF transceivers with MikroTik routers</li>
+                  <li>Programming Raspberry Pi in C on Linux with TCP/IP stack</li>
+                  <li>Designing surface-to-underwater telemetry architecture</li>
+                </ul>
+                <div class="tlc-chips">
+                  <span>Raspberry Pi</span><span>Freewave RF</span><span>C / Linux</span><span>TCP/IP</span>
+                </div>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <span class="tlc-date">Summer 2024</span>
+                <h4>NIT Warangal</h4>
+                <p class="tlc-org">Summer Intern — Industrial Sensors & Automation</p>
+                <ul class="tlc-list">
+                  <li>Programmed Siemens S7-1200 PLC using TIA Portal</li>
+                  <li>Implemented timer/counter logic and analog value processing</li>
+                  <li>Studied 4–20mA, HART, Profibus, Profinet protocols</li>
+                  <li>Worked with LV switchgear, MCCB & ACB protection devices</li>
+                </ul>
+                <div class="tlc-chips">
+                  <span>S7-1200</span><span>TIA Portal</span><span>HART</span><span>Profibus</span>
+                </div>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <span class="tlc-date">2023</span>
+                <h4>Visakhapatnam Steel Plant</h4>
+                <p class="tlc-org">Industrial Intern — Thermal Power Plant Instrumentation</p>
+                <ul class="tlc-list">
+                  <li>Analyzed boiler and turbine control systems</li>
+                  <li>Hands-on with pressure, temperature, flow & level transmitters</li>
+                  <li>Studied real-time process monitoring architectures</li>
+                </ul>
+                <div class="tlc-chips">
+                  <span>Process Control</span><span>Transmitters</span><span>SCADA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Tab -->
+        <div class="rtab-content" id="tab-skills">
+          <div class="skills-mosaic">
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-microchip"></i></div>
+              <h4>PLC & Automation</h4>
+              <p>Siemens S7-1200, TIA Portal, ladder logic, FBD, timer/counter</p>
+            </div>
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-broadcast-tower"></i></div>
+              <h4>Industrial Protocols</h4>
+              <p>4–20mA, HART, Profibus DP, Profinet, fieldbus architecture</p>
+            </div>
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-server"></i></div>
+              <h4>Embedded Systems</h4>
+              <p>Raspberry Pi, C programming, RF modules, Freewave LRS455AC</p>
+            </div>
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-network-wired"></i></div>
+              <h4>Networking</h4>
+              <p>TCP/IP, MikroTik router config, RF telemetry, network topology</p>
+            </div>
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-tachometer-alt"></i></div>
+              <h4>Instrumentation</h4>
+              <p>Pressure, temperature, flow, level transmitters & sensors</p>
+            </div>
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-terminal"></i></div>
+              <h4>Software & OS</h4>
+              <p>Linux, C programming, Bash scripting, TIA Portal, SCADA</p>
+            </div>
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-bolt"></i></div>
+              <h4>Power Systems</h4>
+              <p>LV switchgear, MCCB, ACB, thermal power instrumentation</p>
+            </div>
+            <div class="smcard">
+              <div class="smc-icon"><i class="fas fa-water"></i></div>
+              <h4>AUV Systems</h4>
+              <p>Underwater vehicle comms, surface telemetry, RF architecture</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section id="projects">
+      <div class="container">
+        <div class="sec-hd">
+          <code class="sec-num">03.</code>
+          <h2 class="sec-title">Projects</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="proj-grid">
+
+          <!-- Featured -->
+          <div class="pcard pcard-feat reveal">
+            <div class="pcard-glow"></div>
+            <div class="pcard-inner">
+              <div class="pcard-top">
+                <div class="pcard-num">01</div>
+                <span class="pcard-status live">
+                  <span class="ps-dot"></span> Ongoing
+                </span>
+              </div>
+              <div class="pcard-icon"><i class="fas fa-water"></i></div>
+              <h3>Communication Module for AUV</h3>
+              <p class="pcard-place">CSIR – National Institute of Oceanography, Goa</p>
+              <p class="pcard-desc">
+                Full RF-based communication backbone for an Autonomous Underwater Vehicle — 
+                bridging surface control stations with submerged hardware using 
+                Freewave LRS455AC radio transceivers, MikroTik routers, 
+                and a Raspberry Pi running custom C over TCP/IP on Linux.
+              </p>
+              <div class="pcard-stack">
+                <span>Raspberry Pi</span><span>Freewave LRS455AC</span>
+                <span>MikroTik</span><span>C</span><span>Linux</span><span>TCP/IP</span>
+              </div>
+              <div class="pcard-links">
+                <a href="#" class="pcl-btn"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="pcard reveal">
+            <div class="pcard-inner">
+              <div class="pcard-top">
+                <div class="pcard-num">02</div>
+                <span class="pcard-status">Industrial</span>
+              </div>
+              <div class="pcard-icon"><i class="fas fa-fire"></i></div>
+              <h3>Process Control in Thermal Power Plant</h3>
+              <p class="pcard-place">Visakhapatnam Steel Plant</p>
+              <p class="pcard-desc">
+                Studied and documented boiler/turbine control strategies, 
+                transmitter network topologies, and process monitoring architectures 
+                in a live 1000MW steel plant environment.
+              </p>
+              <div class="pcard-stack">
+                <span>Process Control</span><span>SCADA</span><span>Transmitters</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="pcard reveal">
+            <div class="pcard-inner">
+              <div class="pcard-top">
+                <div class="pcard-num">03</div>
+                <span class="pcard-status">Automation</span>
+              </div>
+              <div class="pcard-icon"><i class="fas fa-cogs"></i></div>
+              <h3>PLC-based Industrial Automation</h3>
+              <p class="pcard-place">NIT Warangal</p>
+              <p class="pcard-desc">
+                Programmed Siemens S7-1200 with TIA Portal — timer/counter logic, 
+                analog I/O processing, and Profibus/Profinet fieldbus communication 
+                in an industrial lab setting.
+              </p>
+              <div class="pcard-stack">
+                <span>S7-1200</span><span>TIA Portal</span><span>Profibus</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════ CERTIFICATIONS ═══════════ -->
+    <section id="certifications">
+      <div class="container">
+        <div class="sec-hd">
+          <code class="sec-num">04.</code>
+          <h2 class="sec-title">Certifications</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="cert-grid">
+          <div class="ccard reveal">
+            <div class="ccard-line"></div>
+            <div class="ccard-top">
+              <div class="ccard-icon"><i class="fas fa-award"></i></div>
+              <span class="ccard-year">2024</span>
+            </div>
+            <p class="ccard-issuer">NIT Warangal</p>
+            <h4>Industrial Automation & PLC Programming</h4>
+            <p class="ccard-desc">Siemens S7-1200, TIA Portal, ladder logic and industrial communication protocols</p>
+            <a href="#" class="ccard-link">View <i class="fas fa-external-link-alt"></i></a>
+          </div>
+
+          <div class="ccard reveal">
+            <div class="ccard-line"></div>
+            <div class="ccard-top">
+              <div class="ccard-icon"><i class="fas fa-industry"></i></div>
+              <span class="ccard-year">2023</span>
+            </div>
+            <p class="ccard-issuer">Visakhapatnam Steel Plant</p>
+            <h4>Industrial Instrumentation Training</h4>
+            <p class="ccard-desc">Thermal power plant instrumentation — boilers, turbines and process control</p>
+            <a href="#" class="ccard-link">View <i class="fas fa-external-link-alt"></i></a>
+          </div>
+
+          <div class="ccard ccard-empty reveal">
+            <div class="ccard-line"></div>
+            <div class="ccard-top">
+              <div class="ccard-icon"><i class="fas fa-plus"></i></div>
+              <span class="ccard-year">—</span>
+            </div>
+            <p class="ccard-issuer">Add Issuer</p>
+            <h4>Your Certificate Here</h4>
+            <p class="ccard-desc">Add your NPTEL / Coursera / IEEE certification here</p>
+          </div>
+
+          <div class="ccard ccard-empty reveal">
+            <div class="ccard-line"></div>
+            <div class="ccard-top">
+              <div class="ccard-icon"><i class="fas fa-plus"></i></div>
+              <span class="ccard-year">—</span>
+            </div>
+            <p class="ccard-issuer">Add Issuer</p>
+            <h4>Your Certificate Here</h4>
+            <p class="ccard-desc">Add your next certification or workshop here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact">
+      <div class="container">
+        <div class="sec-hd">
+          <code class="sec-num">05.</code>
+          <h2 class="sec-title">Get in Touch</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-l reveal">
+            <h3 class="contact-h">
+              Let's build<br><em>something great</em><br>together.
+            </h3>
+            <p class="contact-sub">
+              I'm actively seeking opportunities in industrial automation, 
+              instrumentation engineering, and embedded systems.
+            </p>
+            <div class="cinfo-list">
+              <a href="mailto:venkatmohan200@gmail.com" class="cinfo-row">
+                <div class="cir-icon"><i class="fas fa-envelope"></i></div>
+                <div class="cir-body">
+                  <span>Email</span>
+                  <strong>venkatmohan200@gmail.com</strong>
+                </div>
+                <i class="fas fa-arrow-right cir-arr"></i>
+              </a>
+              <a href="tel:+918179970422" class="cinfo-row">
+                <div class="cir-icon"><i class="fas fa-phone"></i></div>
+                <div class="cir-body">
+                  <span>Phone</span>
+                  <strong>+91 8179970422</strong>
+                </div>
+                <i class="fas fa-arrow-right cir-arr"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/venkat-mohan-vasamsetti" target="_blank" class="cinfo-row">
+                <div class="cir-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="cir-body">
+                  <span>LinkedIn</span>
+                  <strong>venkat-mohan-vasamsetti</strong>
+                </div>
+                <i class="fas fa-arrow-right cir-arr"></i>
+              </a>
+              <a href="https://wa.me/918179970422" target="_blank" class="cinfo-row">
+                <div class="cir-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="cir-body">
+                  <span>WhatsApp</span>
+                  <strong>+91 8179970422</strong>
+                </div>
+                <i class="fas fa-arrow-right cir-arr"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-r reveal">
+            <form id="contactForm" class="cform">
+              <div class="cform-row">
+                <div class="cform-field">
+                  <label>Name</label>
+                  <input type="text" placeholder="Your name" required />
+                </div>
+                <div class="cform-field">
+                  <label>Email</label>
+                  <input type="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="cform-field">
+                <label>Subject</label>
+                <input type="text" placeholder="Internship / Collaboration / Opportunity" />
+              </div>
+              <div class="cform-field">
+                <label>Message</label>
+                <textarea rows="5" placeholder="Hi Venkatmohan, I'd like to…"></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+                <div class="btn-bg"></div>
+              </button>
+              <p class="cform-note" id="cformNote"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-l">
+          <span class="footer-logo">VV</span>
+          <p>Venkatmohan Vasamsetti</p>
+          <p class="footer-sub">Electronics & Instrumentation · India · 2026</p>
+        </div>
+        <div class="footer-r">
+          <a href="https://www.linkedin.com/in/venkat-mohan-vasamsetti" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:venkatmohan200@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/918179970422" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 · Built with care · Open to opportunities</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
