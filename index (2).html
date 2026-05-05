@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our Engineering Journey — A digital memory book for our batch." />
+  <title>Our Engineering Journey</title>
+
+  <!-- Preconnect for Google Fonts performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Display font: Cormorant Garamond (editorial, nostalgic) + DM Sans (clean body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader" aria-label="Loading memories...">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Loading memories<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- ========== MUSIC TOGGLE ========== -->
+  <button id="music-toggle" aria-label="Toggle background music" title="Toggle music">
+    <span class="music-icon music-on">♪</span>
+    <span class="music-icon music-off" hidden>♪̶</span>
+  </button>
+  <!-- Background audio (royalty-free ambient) -->
+  <audio id="bg-music" loop preload="none">
+    <source src="https://www.bensound.com/bensound-music/bensound-memories.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" aria-label="Year navigation">
+    <div class="nav-brand">Our Journey</div>
+    <ul class="nav-years" id="nav-years" role="list"></ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO / LANDING ========== -->
+  <section id="hero" aria-label="Landing section">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-text">A Digital Memory Book</p>
+      <h1 class="hero-title reveal-text">
+        Our<br />
+        <em>Engineering</em><br />
+        Journey
+      </h1>
+      <p class="hero-batch reveal-text" id="hero-batch"></p>
+      <p class="hero-sub reveal-text" id="hero-sub"></p>
+      <div class="hero-cta reveal-text">
+        <a href="#timeline" class="btn-primary">Relive the Memories</a>
+        <span class="hero-scroll-hint">↓ scroll</span>
+      </div>
+    </div>
+    <div class="hero-counter" id="hero-counter" aria-live="polite">
+      <div class="counter-item"><span class="counter-num" data-target="4">0</span><span class="counter-label">Years</span></div>
+      <div class="counter-divider"></div>
+      <div class="counter-item"><span class="counter-num" data-target="24">0</span><span class="counter-label">Memories</span></div>
+      <div class="counter-divider"></div>
+      <div class="counter-item"><span class="counter-num" data-target="100">0</span><span class="counter-label">% Love</span></div>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE ========== -->
+  <main id="timeline" aria-label="Memory timeline">
+    <!-- Year sections injected dynamically by script.js -->
+  </main>
+
+  <!-- ========== MESSAGE TO FRIENDS ========== -->
+  <section id="message" aria-label="Message to friends">
+    <div class="message-wrapper">
+      <div class="message-ornament">✦</div>
+      <h2 class="message-heading" id="message-heading"></h2>
+      <div class="message-body" id="message-body"></div>
+      <div class="message-author" id="message-author"></div>
+      <div class="message-ornament bottom">✦</div>
+    </div>
+  </section>
+
+  <!-- ========== CLOSING / THANK YOU ========== -->
+  <section id="closing" aria-label="Closing screen">
+    <div class="closing-inner">
+      <div class="closing-emoji">🎓</div>
+      <h2 class="closing-title">Thank You for the Memories</h2>
+      <p class="closing-body">
+        This website was made with love, late nights, and a lot of emotion.<br />
+        Keep smiling. Keep in touch. Keep being extraordinary.
+      </p>
+      <div class="closing-names" id="closing-batch"></div>
+      <div class="closing-hearts">
+        <span>❤️</span><span>🧡</span><span>💛</span><span>💚</span>
+      </div>
+      <p class="closing-footer">Made with love · GitHub Pages</p>
+    </div>
+    <!-- Floating particles -->
+    <div class="particles" id="particles" aria-hidden="true"></div>
+  </section>
+
+  <!-- ========== FULLSCREEN MODAL ========== -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Memory viewer" hidden>
+    <button class="modal-close" id="modal-close" aria-label="Close viewer">✕</button>
+    <button class="modal-nav prev" id="modal-prev" aria-label="Previous memory">‹</button>
+    <button class="modal-nav next" id="modal-next" aria-label="Next memory">›</button>
+    <div class="modal-content" id="modal-content">
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-info">
+        <p class="modal-caption" id="modal-caption"></p>
+        <span class="modal-date" id="modal-date"></span>
+      </div>
+    </div>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+  </div>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button id="scroll-top" aria-label="Back to top" title="Back to top" hidden>↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

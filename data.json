@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "title": "Our Engineering Journey",
+    "subtitle": "Four Years. One Family. Forever.",
+    "batch": "2021 – 2025",
+    "college": "Your College Name",
+    "branch": "Computer Science & Engineering",
+    "message": {
+      "heading": "To My Dearest Friends,",
+      "body": "Four years ago, we walked into this place as strangers — nervous, excited, and completely clueless about what lay ahead. We pulled all-nighters, survived impossible exams, laughed in the back rows of lectures we barely understood, and somewhere between the chaos and the calm, we became family.\n\nEvery photograph in this collection holds a piece of something irreplaceable. The late-night canteen runs, the panic before submissions, the celebrations after results — those moments are ours, and no amount of time can take them away.\n\nThis little website is my small way of saying: I'm so grateful it was you people beside me. Wherever life takes us next, I hope we carry these memories like a light.\n\nWith all my love,\nYour Classmate ❤️",
+      "author": "Made with love by your classmate"
+    }
+  },
+  "years": [
+    {
+      "id": "year1",
+      "label": "First Year",
+      "period": "2021 – 2022",
+      "emoji": "🌱",
+      "color": "#4ade80",
+      "theme": "New Beginnings",
+      "description": "The year everything started. New faces, new fears, and a whole new world of possibilities. We were just figuring out who we were.",
+      "memories": [
+        {
+          "id": "y1m1",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+          "caption": "Day one on campus — that mix of excitement and terror we all shared.",
+          "date": "August 2021",
+          "tags": ["orientation", "day-one"]
+        },
+        {
+          "id": "y1m2",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80",
+          "caption": "First lecture ever. We sat in the front row trying to look smart.",
+          "date": "August 2021",
+          "tags": ["academics", "classroom"]
+        },
+        {
+          "id": "y1m3",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&q=80",
+          "caption": "The lab where we broke more code than we fixed. Good times.",
+          "date": "September 2021",
+          "tags": ["lab", "coding"]
+        },
+        {
+          "id": "y1m4",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80",
+          "caption": "First year cultural fest — we danced like nobody was watching (everybody was watching).",
+          "date": "November 2021",
+          "tags": ["cultural", "fest", "fun"]
+        },
+        {
+          "id": "y1m5",
+          "type": "video",
+          "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "caption": "The reel we made for freshers' day. Pure chaos. Pure gold.",
+          "date": "September 2021",
+          "tags": ["video", "freshers"]
+        },
+        {
+          "id": "y1m6",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&q=80",
+          "caption": "First semester exams. We studied. We survived. We questioned everything.",
+          "date": "December 2021",
+          "tags": ["exams", "study"]
+        }
+      ]
+    },
+    {
+      "id": "year2",
+      "label": "Second Year",
+      "period": "2022 – 2023",
+      "emoji": "🔥",
+      "color": "#f97316",
+      "theme": "Finding Our Tribe",
+      "description": "We stopped being strangers and started being us. The friendships deepened, the jokes got worse, and somehow everything got better.",
+      "memories": [
+        {
+          "id": "y2m1",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+          "caption": "Group study sessions that were 20% study, 80% everything else.",
+          "date": "February 2023",
+          "tags": ["study", "group", "friendship"]
+        },
+        {
+          "id": "y2m2",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+          "caption": "The hackathon where we pulled our first all-nighter together.",
+          "date": "March 2023",
+          "tags": ["hackathon", "allnighter", "coding"]
+        },
+        {
+          "id": "y2m3",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+          "caption": "Tech fest 2022 — our first big stage moment. We were terrified but electric.",
+          "date": "October 2022",
+          "tags": ["techfest", "presentation"]
+        },
+        {
+          "id": "y2m4",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
+          "caption": "The canteen table that basically became our second classroom.",
+          "date": "January 2023",
+          "tags": ["canteen", "hangout"]
+        },
+        {
+          "id": "y2m5",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+          "caption": "Late night debugging sessions. We broke the internet. Twice.",
+          "date": "April 2023",
+          "tags": ["coding", "debug", "night"]
+        },
+        {
+          "id": "y2m6",
+          "type": "video",
+          "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "caption": "Our second year farewell video. Already getting nostalgic in year two.",
+          "date": "May 2023",
+          "tags": ["video", "farewell"]
+        }
+      ]
+    },
+    {
+      "id": "year3",
+      "label": "Third Year",
+      "period": "2023 – 2024",
+      "emoji": "⚡",
+      "color": "#a78bfa",
+      "theme": "Rising to the Challenge",
+      "description": "The year we got serious — or at least pretended to. Internships, projects, and the realization that the real world was coming for us.",
+      "memories": [
+        {
+          "id": "y3m1",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
+          "caption": "Internship season — everyone suddenly wearing formal clothes and looking confused.",
+          "date": "June 2023",
+          "tags": ["internship", "professional"]
+        },
+        {
+          "id": "y3m2",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
+          "caption": "Mini project presentation. We rehearsed 40 times. Still fumbled. Still passed.",
+          "date": "November 2023",
+          "tags": ["project", "presentation"]
+        },
+        {
+          "id": "y3m3",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80",
+          "caption": "The seminar where we sounded way smarter than we actually were.",
+          "date": "January 2024",
+          "tags": ["seminar", "smart"]
+        },
+        {
+          "id": "y3m4",
+          "type": "video",
+          "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "caption": "Industrial visit vlog — more food, less industry. Perfect balance.",
+          "date": "February 2024",
+          "tags": ["video", "trip", "industrial-visit"]
+        },
+        {
+          "id": "y3m5",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=800&q=80",
+          "caption": "The trip we took between submissions. We deserved it.",
+          "date": "March 2024",
+          "tags": ["trip", "travel", "fun"]
+        },
+        {
+          "id": "y3m6",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=80",
+          "caption": "Open source contributions, side projects, and dreams we hadn't killed yet.",
+          "date": "April 2024",
+          "tags": ["projects", "github", "coding"]
+        }
+      ]
+    },
+    {
+      "id": "year4",
+      "label": "Final Year",
+      "period": "2024 – 2025",
+      "emoji": "🎓",
+      "color": "#fbbf24",
+      "theme": "The Grand Finale",
+      "description": "The year we didn't want to end. Every moment felt heavier, more precious. We laughed louder knowing the last day was coming.",
+      "memories": [
+        {
+          "id": "y4m1",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1627556704302-624286467c65?w=800&q=80",
+          "caption": "Final year project kickoff. Eight months of pain, wrapped in a beautiful slideshow.",
+          "date": "August 2024",
+          "tags": ["final-project", "fyp"]
+        },
+        {
+          "id": "y4m2",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1560439513-74b037a25d84?w=800&q=80",
+          "caption": "Placement season. Ties, blazers, and absolutely nothing making sense.",
+          "date": "September 2024",
+          "tags": ["placement", "campus-drive"]
+        },
+        {
+          "id": "y4m3",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
+          "caption": "Last lecture ever. We sat there trying not to cry. Some of us failed.",
+          "date": "March 2025",
+          "tags": ["last-lecture", "emotional"]
+        },
+        {
+          "id": "y4m4",
+          "type": "video",
+          "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "caption": "The farewell video we made for our seniors — and then made one for ourselves.",
+          "date": "April 2025",
+          "tags": ["video", "farewell", "emotional"]
+        },
+        {
+          "id": "y4m5",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&q=80",
+          "caption": "Convocation day. Four years. One moment. A thousand feelings.",
+          "date": "May 2025",
+          "tags": ["convocation", "graduation", "milestone"]
+        },
+        {
+          "id": "y4m6",
+          "type": "image",
+          "src": "https://images.unsplash.com/photo-1627556704290-a2c5f5ab7e97?w=800&q=80",
+          "caption": "Last day together. We promised to stay close. We meant it.",
+          "date": "May 2025",
+          "tags": ["last-day", "together", "forever"]
+        }
+      ]
+    }
+  ]
+}
